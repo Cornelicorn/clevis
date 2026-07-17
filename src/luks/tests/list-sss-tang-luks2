@@ -36,15 +36,9 @@ PIN="sss"
 PINS="sss tang"
 CFG=$(printf '
 {
-   "t": 2,
+   "t": 1,
    "pins": {
-     "tang": [
-       {"url":"ADDR1","adv":"%s"},
-       {"url":"ADDR2","adv":"%s"},
-       {"url":"ADDR3","adv":"%s"},
-       {"url":"ADDR4","adv":"%s"},
-       {"url":"ADDR5","adv":"%s"}
-     ]
+     "tang": {"url":"ADDR1","adv":"%s"}
    }
 }
 ' "${ADV}" "${ADV}" "${ADV}" "${ADV}" "${ADV}")
